@@ -1,6 +1,8 @@
 .events {
   margin: 2rem auto;
   max-width: 40rem;
+  position: relative;
+  min-height: 50px;
 }
 
 .list {
@@ -19,9 +21,13 @@
   max-height: 140px;
 }
 
-.item a:hover {
+.item a:hover, .item a.active {
   transform: scale(1.02);
   background-color: var(--color-gray-700);
+}
+
+.item:has(> a.active){
+  order: -1;
 }
 
 .item img {
