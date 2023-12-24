@@ -20,8 +20,11 @@
 // 7. Output the ID of the selected event on the EventDetailPage
 // BONUS: Add another (nested) layout route that adds the <EventNavigation> component above all /events... page components
 
+import {RouterProvider} from "react-router-dom";
+import routes from '../src/routes';
+
 function App() {
-  return <div></div>;
+  return <RouterProvider router={routes} />;
 }
 
 export default App;
